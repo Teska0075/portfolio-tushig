@@ -21,11 +21,15 @@ const ParticlesComponent = () => {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        // background: {
-        //   color: {
-        //     value: "#0d47a1",
-        //   },
-        // },
+        background: {
+          color: {
+            value: "#202020",
+          },
+        },
+        fullScreen: {
+          enable: true,
+          zIndex: -1,
+        },
         fpsLimit: 120,
         interactivity: {
           events: {
@@ -70,7 +74,7 @@ const ParticlesComponent = () => {
               default: "bounce",
             },
             random: false,
-            speed: 1,
+            speed: 0.5,
             straight: false,
           },
           number: {
@@ -84,7 +88,7 @@ const ParticlesComponent = () => {
             value: 0.5,
           },
           shape: {
-            type: "circle",
+            type: "square",
           },
           size: {
             value: { min: 1, max: 5 },

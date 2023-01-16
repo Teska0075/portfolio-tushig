@@ -9,16 +9,20 @@ import Project from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ParticlesComponent from "./components/Particles/Particles";
 
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <>
       <Navbar />
       <ParticlesComponent />
-      <Hero />
-      <About />
-      <Skills />
-      <Project />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
   );
 }
