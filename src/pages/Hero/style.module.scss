@@ -30,20 +30,20 @@
   animation-iteration-count: infinite;
 }
 
-@keyframes anime1 {
-  0% {
-    transform: rotate(0);
-    scale: 1;
-  }
-  50% {
-    transform: rotate(360deg);
-    scale: 2;
-  }
-  100% {
-    transform: rotate(0);
-    scale: 3;
-  }
-}
+// @keyframes anime1 {
+//   0% {
+//     transform: rotate(0);
+//     scale: 1;
+//   }
+//   50% {
+//     transform: rotate(360deg);
+//     scale: 2;
+//   }
+//   100% {
+//     transform: rotate(0);
+//     scale: 3;
+//   }
+// }
 
 .ImgContainer img {
   width: 100%;
